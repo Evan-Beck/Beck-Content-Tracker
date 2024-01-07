@@ -1,7 +1,6 @@
--- seeds.sql example
 USE company_db;
 
-INSERT INTO department (name)
+INSERT INTO department (name) 
 VALUES ('Sales'), ('Engineering'), ('Finance'), ('Marketing');
 
 INSERT INTO role (title, salary, department_id)
