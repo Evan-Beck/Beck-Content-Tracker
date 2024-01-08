@@ -1,5 +1,6 @@
-CREATE DATABASE company_db;
-USE company_db;
+-- Example database for this assignment called companies to store department, roles, employees. 
+CREATE DATABASE IF NOT EXISTS companies_db;
+USE companies_db;
 
 CREATE TABLE department (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -23,3 +24,5 @@ CREATE TABLE employee (
     FOREIGN KEY (role_id) REFERENCES role(id),
     FOREIGN KEY (manager_id) REFERENCES employee(id)
 );
+
+-- Table created for all three elements of the database, using auto incrementing, variable characters, IDs, PKs, and not nulls.
